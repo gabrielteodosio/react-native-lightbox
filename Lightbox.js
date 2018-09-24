@@ -130,7 +130,7 @@ export default class Lightbox extends Component {
             underlayColor={this.props.underlayColor}
             onPress={this.open}
           >
-            {this.props.children}
+            {this.getContent()}
           </TouchableHighlight>
         </Animated.View>
         {this.props.navigator ? false : <LightboxOverlay {...this.getOverlayProps()} />}
